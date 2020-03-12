@@ -1,31 +1,39 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html> 
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
-
-<head>
+	<head>
 	<title>[tɛʀ]</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="main.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 	<link rel="manifest" href="assets/favicon/site.webmanifest">
-</head>
-
+	<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css"><link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css"><link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css"></head>
+	</head>
 <body class="landing">
 
 	<!-- Header -->
 	<header id="header" class="alt">
-		<h1><strong><a href="index.html">Taire</a></h1>
+		<h1><strong><a href="index.html">Taire</a></strong></h1><strong>
 		<nav id="nav">
 			<ul>
 				<li><a href="https://adven.taire.de">Blog</a></li>
-				<li><a href="#three">Projekte</a></li>
-				<li><a href="#four">Kontakt</a></li>
+				<li><a href="#projects">Projekte</a></li>
+				<li><a href="#contact">Kontakt</a></li>
+				<li>
+					<a href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+					>Hell/Dunkel</a>
+				</li>
+				  
 			</ul>
 		</nav>
-	</header> <a href="#menu" class="navPanelToggle"><span class="fa fa-bars">
+	</strong></header><strong> <a href="#menu" class="navPanelToggle"><span class="fa fa-bars" aria-hidden="true">
 		</span>
 	</a>
 
@@ -47,11 +55,14 @@
 				</div>
 				<div class="6u$ 12u$(medium)">
 					<p>Zunächst das Wichtigste: Nenn mich Taire. </p>
-					<p>Ich bin Studentin und mache Sachen mit einem Laptop, den ich habe, seitdem ich 14 bin - kurzes
-						Shoutout am Rande. Der Akku hält immer noch, nie ausgetauscht.
-						<br>Darauf ist zum Beispiel auch diese Website entstanden. Darüber hinaus
-						bearbeite und zeichne ich Bilder, schreibe Texte, habe mich am Bloggen versucht und einige Full
-						Stack-Projekte begonnen, für die allerdings meine Anfangsmotivation irgendwann aufgebraucht war.
+					<p>Ich bin Studentin und mache Sachen mit einem Laptop, den
+						 ich habe, seitdem ich 14 bin - kurzes Shoutout am Rande. 
+						 Der Akku hält immer noch, nie ausgetauscht.
+						<br>Darauf ist zum Beispiel auch diese Website entstanden. 
+						Darüber hinaus bearbeite und zeichne ich Bilder, schreibe 
+						Texte, habe mich am Bloggen versucht und einige Projekte 
+						begonnen, die gerade in verschiedenen Stadien des 
+						Fertigseins irgendwo herumliegen.
 						<br>tl;dr: Irgendwas mit Medien und Code eben.
 						<br>
 					</p>
@@ -61,35 +72,22 @@
 	</section>
 
 	<!-- Projekte -->
-	<section id="three" class="wrapper style2">
+	<section id="projects" class="wrapper style2">
 		<div class="container 75%">
 			<header class="major special">
 				<h2>meine Projekte</h2>
-				<p>oder: die Philosophie des Sinnlosen</p>
 			</header>
-			<p>Nichts ist dauerhaft oder hat einen Sinn, wenn es keinen Sinn von uns gegeben bekommt.
-				Und genau deshalb
-				sollten wir nicht aufhören, Dinge zu erschaffen, uns auszuleben, zu gestalten, zu
-				verändern.
-				Kurzum: Die Welt nach unseren Vorstellungen zu einem besseren Ort machen zu wollen und
-				ihnen eben diesen
-				Sinn
-				zu geben.
-				<br> Food for thought, aber hier gehts eigentlich um meine bisherigen Projekte - die meisten sind genau
-				aus ebenjener Sinnlosigkeit entstanden und erfüllen jetzt hiermit einen Sinn.
-				<br>
-				Die Kurve mit der Überleitung hab ich gekriegt.
-			</p>
 			<div class="feature-grid">
+
 				<div class="feature">
-					<div class="image rounded"><img src="images/nuggs.jpg" alt="Nuggets" />
+					<div class="image rounded"><img src="images/nuggs.jpg" alt="Nuggets">
 					</div>
 					<div class="content">
 						<header>
 							<h4>Nuggetinator</h4>
 							<p>Die perfekte Anzahl Nuggets für deinen Hunger</p>
 						</header>
-						<p>Effizienz trifft Hunger trifft Sparsamkeit trifft Dips</p>
+						<p>Sourcecode ist aufgrund jugendlicher Naivität und rapider Lernprozesse noch privat. Links? Sind noch Bruch.</p>
 						<ul class="actions fit">
 							<div class="6u 12u$(xsmall)">
 								<li><a href="http://taire.de/nuggetinator.html" class="button special">Ausprobieren</a></li>
@@ -98,23 +96,46 @@
 						</ul>
 					</div>
 				</div>
+
 				<div class="feature">
-					<div class="image rounded"><img src="images/pic05.jpg" alt="" />
+					<div class="image rounded"><img src="images/matrix.jpg" alt="Nuggets">
+					</div>
+					<div class="content">
+						<header>
+							<h4>Matrix</h4>
+							<p>Weil Dezentralität cool sein soll</p>
+						</header>
+						<p>Ich betreibe einen [matrix]-Server! Bisher bin ich noch so gut wie allein hier, du kannst aber gerne einen Account haben :) Schreib mir einfach, z.B. per Mail unten.</p>
+						<ul class="actions fit">
+							<div class="6u 12u$(xsmall)">
+								<li><a href="http://taire.de/#contact" class="button special">Account pls</a></li>
+								<li><a href="https://www.matrix.org" class="button">Mehr Infos</a></li>
+							</div>
+						</ul>
+					</div>
+				</div>
+
+			<!--
+				<div class="feature">
+					<div class="image rounded"><img src="images/pic05.jpg" alt="">
 					</div>
 					<div class="content">
 						<header>
 							<h4>Noch mehr tolle Sachen</h4>
-							<p>...in Arbeit. Oder noch nicht angefangen. Kommt aber bald.</p>
+							<p>in Arbeit. Oder noch nicht angefangen. Kommt aber bald.</p>
 						</header>
-						<p>Kreativer Denkprozess ist noch im Gange. Ideen? Unten vorschlagen pls.</p>
+						<p>Kreativer Denkprozess ist noch im Gange.</p>
 					</div>
 				</div>
+			-->	
+
+
 			</div>
 		</div>
 	</section>
 
-	<!-- Kontakt -->
-	<section id="four" class="wrapper style1">
+
+	<section id="contact" class="wrapper style1">
 		<div class="container 75%">
 			<header class="major">
 				<h2>Kontakt</h2>
@@ -143,18 +164,20 @@
 		</div>
 	</section>
 
+
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="container">
 			<ul class="icons">
-				<li><a href="https://matrix.to/#/@taire:imninja.net" class="icon ">[matrix]<span class="label">Matrix</span></a></li>
+				<li><a href="https://matrix.to/#/@vol:taire.de" class="icon ">[matrix]<span class="label">Matrix</span></a></li>
 				<li><a href="https://github.com/pantaire" class="icon fa-github"><span class="label">Github</span></a></li>
 				<li><a href="https://twitter.com/pan_taire" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="https://www.instagram.com/pan.taire/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="https://adven.taire.de" class="icon fa-rss"><span class="label">Blog</span></a></li>
 			</ul>
 			<ul class="copyright">
-				<li>&copy; 2020 Katharina Merz (aka taire)</li>
+				<li>© 2020 taire</li>
+				<li><a href="taire.de/impressum.html">Impressum</a></li>
 			</ul>
 		</div>
 	</footer>
@@ -165,6 +188,8 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="https://kit.fontawesome.com/aedc529af6.js" crossorigin="anonymous"></script>
-</body>
 
+
+</strong>
+</body>
 </html>
