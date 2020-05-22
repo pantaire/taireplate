@@ -20,6 +20,28 @@
 		line-height: 1;
 	}
 
+	@media (prefers-color-scheme: dark) {
+		img {
+			opacity: .75;
+		}
+		body {
+			background-color: #000000;
+		color: #fff;
+		}
+		body strong, b {
+			color: #f6f6f6;
+			font-weight: 700;
+		}
+		body .wrapper.style2 {
+			background-color: #202020;
+		}
+		body #footer {
+			padding: 8em 0 6em 0;
+			background: #202020;
+			color: #aaa;
+			text-align: center;
+			}
+	}
 	body.dark {
 		background-color: #000000;
 		color: #fff;
