@@ -46,6 +46,7 @@
 		background-color: #000000;
 		color: #fff;
 	  }
+	
  
 	ol, ul {
 		list-style: none;
@@ -2031,6 +2032,10 @@
 					display: inline;
 					max-width: 100%;
 				}
+				.image.dark {
+					background-color: #000000;
+					color: #fff;
+				  }
 
 			.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
 				float: right;
